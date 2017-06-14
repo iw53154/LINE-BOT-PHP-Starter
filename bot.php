@@ -335,8 +335,9 @@
 				// Get replyToken
 				$replyToken = $event['replyToken'];
 				if ($text == "สวัสดี" || $text == "ดีจ้า" || $text == "hello"){
-					$text = "สวัสดีเป็นไงบ่าง???";
-					$text = "สวัสดี";
+					$A = array("สวัสดี สบายดีไหม???","สวัสดีจ้าา","ว่าไงมีไรให้ผมช่วย");
+					$B = array_rand($A,1);
+					$text= $A[$B];
 				}
 	
 				// Build message to reply back
