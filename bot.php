@@ -336,6 +336,7 @@
 				$replyToken = $event['replyToken'];
 				if ($text == "สวัสดี" || $text == "ดีจ้า" || $text == "hello"){
 					$text = "สวัสดีเป็นไงบ่าง???";
+					$text = "สวัสดี";
 				}
 	
 				// Build message to reply back
