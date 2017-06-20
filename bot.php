@@ -334,18 +334,17 @@
 				$text = $event['message']['text'];
 				// Get replyToken
 				$replyToken = $event['replyToken'];
-				if ($text == "งาน" || $text == "เปิดงาน" || $text == "open"){
-					$text = fopen("c:\\logfile", "r");
-					if($text) {
-						while (!feof($text)) {
-							$line = fgets($text);
-							echo $line;
-						}
-						fclose($text);
-					}
-					else {
-						echo "Error opening file.\n";	
-					}
+				if ($text == "สวัสดี" || $text == "ดีจ้า" || $text == "hello"){
+					$A = array("สวัสดี สบายดีไหม???","สวัสดีจ้าา","ว่าไงมีไรให้ผมช่วย");
+					$B = array_rand($A,1);
+					$text= $A[$B];
+				}
+				
+				if ($text == "สบายดีไหม" || $text == "เป็นไงบ่าง"){
+					$C = arry("สบายดี","ช่วงนี้ไม่ค่อยสบายอะ");
+					$D = array_rand($C,1);
+					$text= $C[$D];
+				}
 
 				// Build message to reply back
 				$messages = [
