@@ -339,10 +339,11 @@
 					$B = array_rand($A,1);
 					$text= $A[$B];
 				}
+				
 				if ($text == "สบายดีไหม" || $text == "เป็นไงบ่าง"){
 					$C = arry("สบายดี","ช่วงนี้ไม่ค่อยสบายอะ");
 					$D = array_rand($C,1);
-					$text=$C[$D];
+					$text= $C[$D];
 				}
 				// Build message to reply back
 				$messages = [
